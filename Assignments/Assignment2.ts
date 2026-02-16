@@ -9,34 +9,39 @@ function eligibleForLoan(creditScore: number, income: number, employmentStatus: 
         return "Loan Approved";
     }   
 
-    else if(creditScore >= 650 && creditScore < 750)
-
+    else if(creditScore > 650 )
     {    
-        if (income >= 50000 && employmentStatus === true && debtToIncomeRatio < 40.0) 
+        if(income> 50000)
         {
-            return "Loan Approved"
+            
+            if(employmentStatus == true)
+            {
+                if(debtToIncomeRatio < 40)
+                {
+                    return "Loan Approved";
+                }
+                else
+                {
+                    return "Loan Denied: Debt to Income Ratio is too high";
+                }
+            }
+            else
+            {
+                return "Employment status is not stable, loan Denied";
+            }
         }
+        
         else
         {
-            return "Loan Denied";
+            return "Loan Denied: Income is too low";
         }
+        
     }
     else 
     {
-        return "Loan Denied";
+        return "Loan Denied: Credit Score is too low";
     }       
 }
 
 let result: string = eligibleForLoan(creditScore, income, employmentStatus, debtToIncomeRatio);
 console.log(result);
-
-//sample input and output for above example
-
-// Sample Input:    
-// creditScore: 800
-// income: 50000
-// employmentStatus: true
-// debtToIncomeRatio: 35.0
-
-// Sample Output:
-// Loan Approved
