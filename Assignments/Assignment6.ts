@@ -1,5 +1,5 @@
 //Program to print true if given number is prime else false
-let num:number = 17;
+let num:number = 1;
 
 let result:boolean = false;
 
