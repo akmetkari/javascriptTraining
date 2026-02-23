@@ -61,15 +61,29 @@
 // next(add);
 
 
-function getChai(order:string):string |null{
-    if(!order) return null;
-    return order;
+// function getChai(order:string):string |null{
+//     if(!order) return null;
+//     return order;
+// }
+
+// function returnChai(type?:string){
+
+//     console.log("chai is "+type || "chai is not available");
+// }
+
+// returnChai("Masala Chai");
+// returnChai();
+
+function getUsername(callback: (name: string) => void): void {
+    const name = "Alice"; // Imagine this comes from a database
+    callback(name);
 }
 
-function returnChai(type?:string){
+// We "send" the instructions on how to print the name
+getUsername((n) => {
+    console.log(`Welcome to the dashboard, ${n}!`);
+});
 
-    console.log("chai is "+type || "chai is not available");
-}
-
-returnChai("Masala Chai");
-returnChai();
+getUsername((n) => {
+    console.log(`User ${n} has logged out.`);
+});
