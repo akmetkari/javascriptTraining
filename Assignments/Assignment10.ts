@@ -1,6 +1,5 @@
 //code to maximise proft
-
-let prices = [7,6,4,3,1];
+let prices = [7,1,4,3,9];
 
 let maximisedProfit = 0;
 
