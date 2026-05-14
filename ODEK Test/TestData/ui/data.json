@@ -1,0 +1,33 @@
+{
+    "Test Case 1: Sign Up": {
+        "Name": "akshay",
+        "email": "akmet207kari22@gmail.com",
+        "password": "akshay123",
+        "title": "Mr",
+        "Day": 10,
+        "Month": "May",
+        "Year": 1990,
+        "firstName": "akshay",
+        "lastName": "metkari",
+        "company": "apple",
+        "address1": "123 main",
+        "address2": "opti3",
+        "state": "Maharashtra",
+        "city": "Pune",
+        "zipcode": "411001",
+        "enableOffers": "Receive special offers from our partners!",
+        "mobileNumber": "1234567890"
+    },
+    "Test Case 2: Purchase Product": {
+        "Name": "akshay",
+        "email": "akmetkari21422@gmail.com",
+        "password": "akshay123",
+        "productToBuy": "Regular Fit Straight Jeans"
+    },
+    "Test Case 3: Inventory & Search Reliability": {
+        "searchTerm": "Top",
+        "categoryHeader": "Women - Tops Products",
+        "firstProductName": "Blue Top",
+        "firstProductPrice": "500"
+    }
+}

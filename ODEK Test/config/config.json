@@ -1,0 +1,10 @@
+{
+    "TestEnv":
+    {
+        "url":"https://automationexercise.com/",
+        "username":"testuser",
+        "password":"testpassword"
+    }
+
+
+}
