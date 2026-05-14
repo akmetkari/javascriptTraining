@@ -46,18 +46,32 @@ This layer is split into two distinct sub-folders:
 ```text
 ODEK Test/
 ├── PageObjects/
-│   ├── page-elements/      # Locator repository (JSON)
-│   └── page-steps/         # Action methods (TS)
+│   ├── page-elements/          # Locator repository (JSON)
+│   │   ├── home-page-elements.json
+│   │   ├── signup-page-elements.json
+│   │   └── Products-page-elements.json
+│   └── page-steps/             # Action methods (TS)
+│       ├── home-page-steps.ts
+│       ├── signup-page-steps.ts
+│       └── Products-page-steps.ts
 ├── TestData/
-│   └── ui/data.json        # Test-specific input data
+│   └── ui/data.json            # Test-specific input data
 ├── config/
-│   └── config.json         # Global application configuration
+│   └── config.json             # Global application configuration
+├── fixtures/
+│   └── base-fixture.ts         # Custom Playwright fixture setup
+├── scripts/
+│   ├── run-allure-tests.js     # Robust runner — clears results & runs tests
+│   ├── manage-reports.js       # Generates report & preserves Trend History
+│   └── serve-report.js         # Serves the latest Allure dashboard
 ├── tests/
 │   └── ApplicationTests.spec.ts # Main test scenarios
 ├── webCommons/
-│   └── webCommons.ts       # Low-level interaction wrapper
-├── playwright.config.ts    # Framework configuration
-└── package.json            # Dependencies (@playwright/test, @types/node)
+│   └── webCommons.ts           # Low-level interaction wrapper
+├── playwright.config.ts        # Framework configuration
+├── tsconfig.json               # TypeScript compiler configuration
+├── package.json                # Dependencies & NPM scripts
+└── .gitignore                  # Excluded files (node_modules, reports, etc.)
 ```
 
 ---
@@ -82,13 +96,15 @@ By storing locators in JSON files, the framework ensures that UI changes (like a
 | --- | --- | --- |
 | **Sign Up** | Registration, Personal Info, Address, Preferences | Home, Signup |
 | **Purchase Product** | Login, Category selection, Cart management, Checkout | Home, Products |
+| **Search Reliability** | Inventory search accuracy and string assertions | Home, Products |
 
 ---
 
 ## 6. Recommendations
-1. **Reporting**: Integrate specialized reporters (like Allure) if more detailed visual reports are needed.
+1. ~~**Reporting**: Integrate specialized reporters (like Allure) if more detailed visual reports are needed.~~ ✅ **Done** — Allure Reports fully integrated with Trend History via `scripts/`.
 2. **Parallelization**: Since `fullyParallel: true` is set, ensure shared state is avoided in `webCommons`.
 3. **API Validation**: Consider adding API interaction helpers to `webCommons` for setup/teardown tasks (e.g., deleting test users).
+4. **Expand Coverage**: Add `CartPageSteps` and `ContactUsPageSteps` to cover Cart logic and Customer Support flows (see `Critical_Business_Flows.md`).
 
 ---
-*Analysis generated on 2026-04-22*
+*Analysis updated on 2026-05-14*

@@ -21,6 +21,8 @@ ODEK Test/
 │   └── ui/data.json        # Test-specific dynamic input data
 ├── config/
 │   └── config.json         # Global application configuration
+├── fixtures/
+│   └── base-fixture.ts     # Custom Playwright fixture setup
 ├── tests/
 │   └── ApplicationTests.spec.ts # Main execution test suites
 ├── webCommons/
@@ -30,7 +32,9 @@ ODEK Test/
 │   ├── manage-reports.js   # Generates reports and builds Trend History graphs
 │   └── serve-report.js     # Safely serves the Allure dashboard
 ├── playwright.config.ts    # Core Playwright configuration
-└── package.json            # NPM Dependencies and scripts
+├── tsconfig.json           # TypeScript compiler configuration
+├── package.json            # NPM Dependencies and scripts
+└── .gitignore              # Excluded files (node_modules, reports, etc.)
 ```
 
 ## 🛠️ Prerequisites
