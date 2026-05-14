@@ -1,0 +1,21 @@
+
+# Dependencies
+node_modules/
+
+# Playwright generated output
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Allure Reports (generated results & timestamped report folders)
+/allure-results/
+/reports/
+
+# TypeScript build cache
+*.tsbuildinfo
+
+# IDE / Editor settings
+.vscode/
+

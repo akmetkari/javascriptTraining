@@ -1,0 +1,20 @@
+{
+    "HomeLogo": "//a[text()=' Home']",
+    "SignUpButton": "//a[text()=' Signup / Login']",
+    
+    "EmailTextbox": "//input[@placeholder='Email Address']",
+    
+    "NameTextbox": "//input[@name='name']",
+    "emailAddressField": "//input[@data-qa='signup-email']",
+    "SignUpSubmitButton": "//button[@data-qa='signup-button']",
+   
+    "LoginEmailField": "//input[@data-qa='login-email']",
+    "LoginPasswordField": "//input[@data-qa='login-password']",
+    "LoginButton": "//button[@data-qa='login-button']",
+
+    "ProductsLink":"//a[text()=' Products']",
+    "EmailAlreadyExistError": "//p[text()='Email Address already exist!']"
+
+    
+
+}

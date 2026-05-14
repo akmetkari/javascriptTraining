@@ -1,0 +1,25 @@
+{
+    "NameTextbox": "//input[@name='name']",
+    "EmailTextbox": "//input[@placeholder='Email Address']",
+    "SignupSubmitButton": "//button[text()='Signup']",
+    "EnterAccountInfoText": "//h2[text()='Enter Account Information']",
+    "MrRadioButton": "//input[@value='Mr']",
+    "PasswordTextbox": "//input[@name='password']",
+    "DaysDropdown": "#days",
+    "MonthsDropdown": "#months",
+    "YearsDropdown": "#years",
+    "SpecialOffersCheckbox": "//input[@name='optin']",
+    "FirstNameTextbox": "//input[@name='first_name']",
+    "LastNameTextbox": "//input[@name='last_name']",
+    "CompanyTextbox": "//input[@name='company']",
+    "AddressTextbox": "//input[@name='address1']",
+    "Address2Textbox": "//input[@name='address2']",
+    "StateTextbox": "//input[@name='state']",
+    "CityTextbox": "//input[@name='city']",
+    "ZipcodeTextbox": "#zipcode",
+    "MobileNumberTextbox": "//input[@name='mobile_number']",
+    "CreateAccountButton": "//button[text()='Create Account']",
+    "AccountCreatedText": "//b[text()='Account Created!']",
+    "ContinueLink": "//a[text()='Continue']"
+
+}
